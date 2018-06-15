@@ -57,7 +57,7 @@ In our example, we are creating a server that listens to port 7000 and responds 
 
   `docker run -v /path/to/hello:/go/src/hello -p 7000:7000 canthefason/go-watcher watcher -run hello`
 
-Containerized Watcher also supports different versions of Go by leveraging [gvm](https://github.com/moovweb/gvm). Currently it only supports major versions right now. If you don't set anything, by default Watcher will pick version 1.7. If you want to change the Go version, you can use GO_VERSION environment variable. Currently it only supports 1.4, 1.5, 1.6, 1.7 at the moment
+Containerized Watcher also supports different versions of Go by leveraging [gvm](https://github.com/moovweb/gvm). Currently it only supports major versions right now. If you don't set anything, by default Watcher will pick version 1.10.3. If you want to change the Go version, you can use GO_VERSION environment variable. Currently it only supports 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 1.10.3 at the moment
 
    `docker run -v /path/to/hello:/go/src/hello -e GO_VERSION=1.6 -p 7000:7000 canthefason/go-watcher watcher -run hello`
 
